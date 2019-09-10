@@ -1,0 +1,45 @@
+$colour: #FF1166;
+//$colour: #228DFF;
+
+body {
+  // background-image: radial-gradient(desaturate(darken(#FF1166, 30%), 30%), black);
+  // background:transparent;
+}
+.neon {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'LearningCurveProRegular';
+  font-weight: normal;
+  color: lighten($colour, 45%);
+  animation: neon 1.5s ease-in-out infinite alternate;
+  animation: seapaga 2.6s infinite;
+-webkit-animation: seapaga 2.6s infinite;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+      0 0 5px white,
+      0 0 10px transparentize(white, 0.5),
+      0 0 15px transparentize(white, 0.75),
+      0 0 20px $colour,
+      0 0 35px $colour,
+      0 0 40px $colour,
+      0 0 50px $colour,
+      0 0 75px $colour,
+      0 0 85px black;
+  }
+  to {
+    text-shadow:
+      0 0 5px white,
+      0 0 15px transparentize(white, 0.25),
+      0 0 20px transparentize(white, 0.5),
+      0 0 30px $colour,
+      0 0 45px $colour,
+      0 0 50px $colour,
+      0 0 60px $colour,
+      0 0 85px $colour,
+      0 0 95px black;
+  }
+}
+

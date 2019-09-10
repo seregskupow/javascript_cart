@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1200px) {
+    .flamingo, .kaktus{
+        display: none;
+    }
+    .item, .com-item{
+        flex-direction: column;
+    }
+    .item p, .item img, .com-item .image, .com-item .comment{
+        width: 80%;
+        
+    }
+    .banner-slider{
+        width: 80vw;
+        height: auto;
+    }
+    .banner{
+        width: 80vw;
+        margin-top: 150px;
+    }
+}
